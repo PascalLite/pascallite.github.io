@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section h1 {
+  margin-bottom: 1em;  
+}
+ul {
+  list-style-type: disc;
+  padding: 0 1em;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;  
+}
+.drawing {
+  font-size: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#main {
+  background-color: #00416C;
+  color: white;
+  padding: 3em;
+}
+#basics, #community {
+  background-color: rgb(0, 170, 255);
+  background-image: linear-gradient(to right, rgb(0, 100, 215), rgb(0, 170, 255),rgb(0, 210, 255));  
+}
+#community {
+  background-color: rgb(0, 170, 255);
+  background-image: linear-gradient(to left, rgb(0, 100, 215), rgb(0, 170, 255),rgb(0, 210, 255));  
+}
+#wallets, #merchants {
+  background-color: white;
+}
+#mining {
+  background-color: #f6f8f8;
+}
+#exchanges {
+  background-color: #f6f8f8;
+  background-image: linear-gradient(to right, #F0F2F2, #f6f8f8, white);
+}
+
+#basics, #community, #wallets, #exchanges, #mining, #merchants {
+  padding: 3em 0em;
+}
+
+#mining .drawing, #exchanges .drawing {
+  color: rgba(0, 170, 255, 0.3);
+}
+#merchants .drawing {
+  color: #00416C;
+  opacity: 0.3;
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main a {
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  background-color: rgb(0, 170, 255);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  color: white;
+  min-width: 11.5em;;
+  text-decoration: none;
+  margin: 0.5em;
+  border-bottom: 0.2em solid rgba(0, 0, 0, 0.2);
+  border-top: 0.2em solid rgba(255,255,255,0.3);
+}
+#main a:hover {
+  background-color: rgba(0, 170, 255, 0.8);
+}
+#main a > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: .75em;
+}
+#main a .icon {
+  margin-right: 0.4em;
+}
+#main a .caption {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;  
+}
+#main a .caption .hint {
+  white-space: normal;
+  font-size: 0.65em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#main .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+#main .description {
+  font-size: 1.75em;
+}
+
+#basics, #community {
+  color: rgba(255, 255, 255, 0.8);
+}
+#basics h1, #community h1 {
+  color: white;
+}
+#basics h1 {
+  margin: 0;
+  margin-bottom: 0.2em;  
+}
+#basics .icon {
+  color: white;
+  font-size: 5em;
+  text-align: right;
+  padding-right: 0.25em;
+}
+
+#wallets .row > div:nth-child(1) {
+  background-image: url("info.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 0;
+  background-position-y: 4em;
+}
+#wallets a {
+  /*text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  border-radius: 0.5em;
+  background-color: #00416C;
+  padding: 0.5em 1em;
+  min-width: 5em;
+  text-align: center;
+  margin: 0.5em;
+  float: right;
+  clear: both;*/
+  font-weight: bold;
+}
+#wallets h1 {
+  margin-bottom: 1em;
+}
+#wallets ul.chainedList {
+  margin: 0;
+  padding: 0 2em;
+  list-style: none;
+}
+#wallets .chainedList > li {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  padding-left: 2.25em;
+  border-left: 3px solid rgb(0, 170, 255);
+}
+#wallets .chainedList > li.title {
+  padding: 0;
+  padding-left: 1.5em;
+  font-size: 1.5em;
+  /*background: linear-gradient(to left, rgba(0,0,0,0), rgb(0, 170, 255));
+  color: white;*/
+}
+#wallets .chainedList > li:last-child {
+  border-left: none;
+}
+#wallets .chainedList > li.title:before {
+  content: "•";
+  font-size: 200px;
+  line-height: 0px;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0.5rem;
+  color: rgb(0, 170, 255);
+}
+#wallets ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mining a, #merchants a, #exchanges a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00416C;
+  display: inline-block;
+}
+#mining a:hover, #merchants a:hover, #exchanges a:hover {
+  color: rgb(0, 170, 255);
+}
+
+#exchanges ul {
+  list-style-type: disc;
+  padding: 0 1em;
+}
+
+#community a {
+  display: inline-block;
+  color: #00416C;
+  font-weight: bold;
+}
+#community a:hover {
+  opacity: 0.75;
+  text-decoration: none;
+}
+#community .drawing {
+  font-size: 8vw;
+}
+
+#footer {
+  height: auto;
+  background-color: #00416C;
+  padding: 2em 0;
+  color: white;
+}
+#footer ul {
+  list-style: none;
+  margin: 0;
+  color: white;
+  padding: 0;
+}
+#footer ul > li:nth-child(1) {
+  font-weight: bold;
+  line-height: 2em;
+}
+#footer a {
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#footer a:hover {
+  opacity: 0.9;
+}
+#footer img {
+  border-radius: 50%;
+  height: 1em;
+  margin-right: 0.25em;
+}

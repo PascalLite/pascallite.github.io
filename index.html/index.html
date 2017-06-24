@@ -1,0 +1,214 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>PascalLite – User-friendly cryptocurrency</title>
+        <link rel="shortcut icon" href="static/favicon.ico">
+        <link rel="stylesheet" href="static/pascallite.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <section id="main">
+            <div class="logo"><img src="static/pascallite.png"/>PascalLite</div>
+            <div class="description">User-friendly, reliable, secure cryptocurrency</div>
+            <div>
+                <a href="https://wallet.pascallite.com">
+                    <div>
+                        <div class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </div>
+                        <div class="caption">
+                            <div>Web Wallet</div>
+                            <div class="hint">Fully-funcitonal in-browser PascalLite Wallet</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/xiphon/PascalLite/releases">
+                    <div>
+                        <div class="icon">
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="caption">
+                            <div>Download</div>
+                            <div class="hint">Desktop Wallet for Windows and Linux platforms</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="basics">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-1 icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Easy</h1>
+                        In contrast to classic cryptocurrencies PascalLite offers easy-to-remember addresses.<br/>
+                        Account numbers like 10, 11729 or 2001302 are a way more user-friendly.<br/>
+                        Checksums are used to prevent accidental transactions.
+                    </div>
+                    <div class="col-md-1 icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Secure</h1>
+                        Choose appropriate security level satisfiying your needs. Up to 521 bits of entropy.<br/>
+                        For example, Bitcoin offers only 256 bit keys to protect your funds.
+                    </div>
+                    <div class="col-md-1 icon">
+                        <i class="fa fa-bolt"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Fast</h1>
+                        Innovative safebox blockchain makes it possible to inspect your accounts in a moment, without spending hours for a full database lookup.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="wallets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Getting started</h1>
+                        <ul class="chainedList">
+                            <li class="title">Wallet</li>
+                            <li>An application for managing your keys and keeping them secret</li>
+                            <li class="title">Keypair</li>
+                            <li>Consists of a private key and an appropriate public key. Multiple keylengths are supported, up to 512 bits. User can generate as many keypairs as he wants</li>
+                            <li class="title">Account</li>
+                            <li>Main operational item in the blockchain. Each account is assigned to owner's public key. Account can be a source or a destination for funds transfer</li>
+                            <li class="title">Safebox</li>
+                            <li>Introduced to omit a full database lookup during particular account's balance calculation. Safebox is a list of all accounts in the system included into each block. Accounts balances, ownership information are automatically calculated after each operation processed by the network. Every new block will contain the final safebox state of a previous block</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mining">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 desc">
+                        <h1>Network &amp; Mining</h1>
+                        <p>
+                            Explore live operations, current hashrate, last blocks mined and the whole PascalLite network at <a href="https://explorer.pascallite.com">explorer.pascallite.com <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                        <p>
+                            Numerous improvements were implemented to keep our network rock solid.
+                        </p>
+                        <p>
+                            Innovative difficulty retarget algorithm protects the network against oversupply attacks.
+                        </p>
+                        <p>
+                            Network Adjusted Time (NAT) introduced to mitigate timestamp attacks.
+                        </p>
+                        <p>
+                            POW function is based on double SHA-256 hash algorithm and is pretty similar to the one Bitcoin uses.
+                        </p>
+                        Earn coins, get a free account from one of PascalLite mining pools:
+                        <ul>
+                            <li><a href="https://pasl.fairpool.xyz">Fairpool</a></li>
+                            <li><a href="https://pasl.suprnova.cc">Suprnova</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 drawing hidden-sm-down">
+                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="merchants">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 drawing hidden-sm-down">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6 desc">
+                        <h1>Running your own processing</h1>
+                        <p>
+                            Instruction how to compile and run PascalLite Linux Daemon is avalable on the project's Github page. <a href="https://github.com/xiphon/PascalLite#daemon-linux">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                        <p>
+                            JSON-RPC interface is provided to automate typical tasks needed to run an exchange, merchant or pool service. <a href="https://github.com/xiphon/PascalLite#rpc">Read detailed RPC documentation <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="exchanges">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 desc">
+                        <h1>Invest, buy and trade PASL</h1>
+                        <p>
+                            Exchange PASL for other existing currencies using <a href="https://www.cryptopia.co.nz/Exchange/?market=PASL_BTC">Cryptopia's services <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                        <p>
+                            If you are interested in buying an account, especially a beautiful one, take a look at our <a href="https://accounts.pascallite.com">PascalLite Account Trading Platform <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 drawing hidden-sm-down">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="community">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 drawing hidden-sm-down">
+                        <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6 desc">
+                        <h1><i class="fa fa-github" aria-hidden="true"></i> Join us</h1>
+                        <p>
+                            PascalLite is an open-source project. It is mostly written in Pascal language. Feel free to inspect the code and <a href="https://github.com/xiphon/PascalLite">contribute <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Services</li>
+                            <li><a href="https://accounts.pascallite.com">Account Trading</a></li>
+                            <li><a href="https://explorer.pascallite.com">Block Explorer</a></li>
+                            <li><a href="https://wallet.pascallite.com">Web Wallet</a></li>
+                            <li><a href="https://github.com/xiphon/PascalLite/releases">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Exchanges</li>
+                            <li><a href="https://www.cryptopia.co.nz/Exchange/?market=PASL_BTC">Cryptopia</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Mining pools</li>
+                            <li><a href="https://pasl.fairpool.xyz">Fairpool</a></li>
+                            <li><a href="https://pasl.suprnova.cc">Suprnova</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Community</li>
+                            <li><a href="https://github.com/xiphon/PascalLite"><img src="https://github.com/favicon.ico"/> Github</a></li>
+                            <li><a href="https://twitter.com/PASLLITE1"><img src="https://twitter.com/favicon.ico"/> Twitter</a></li>
+                            <li><a href="https://pascallite.signup.team/"><img src="https://slack.com/favicon.ico"/> Slack</a></li>
+                            <li><a href="https://bitcointalk.org/index.php?topic=1773026"><img src="https://bitcointalk.org/favicon.ico"/> Bitcointalk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        PascalLite Community © 2017
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
